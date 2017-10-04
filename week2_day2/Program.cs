@@ -39,46 +39,56 @@ namespace week2_day2
             //}
 
             //  string greeting = "my name is little yusuf";
-            //string[] words = greeting.Split();
-            //for(int i= 0; i<words.Length; i ++)
+
+            //Console.WriteLine("do you want to play the (yes or no");
+            //string playAgain = Console.ReadLine();
+
+            //while (playAgain=="yes")
+
             //{
-            //    Console.WriteLine(words[i]);
-            //}
-            /* Create an array called days with the elements Monday, Tuesday, and Wednesday. Using a For Loop, print the elements of the days array*/
 
-            //String[] daysOfWeek = { "monday", "Tuesday", "Wednesday" };
-
-            //for(int i= 0; i< daysOfWeek.Length; i++)
-            //{
-            //    Console.WriteLine(daysOfWeek[i]);
-            //}
-
-            //string[] months = { "jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct",  };
-
-            //foreach(string month in months)
-            //{
-            //    Console.WriteLine(month);
+            //    Console.WriteLine("it is a rematch!");
+            //    Console.WriteLine("do you want to play again (YES/NO");
+            //    playAgain = Console.ReadLine();
             //}
 
-            //string[] bands = { "new", "the fleix culpa", "twice" };
-            //foreach(string name in bands)
-            //{
-            //    Console.WriteLine(name);
-            //}
 
-            /*Write a program that takes your favorite foods and prints them out one at a time. (Use a foreach loop*/
-
-            String[] favoriteFood = { "rice", "pasta", "chiken wings", "pitza", "pritzels", };
-            foreach(string food in favoriteFood)
+            Console.WriteLine("do you want to check in your appointment (YES/NO");
+            string checkAppont = Console.ReadLine().ToUpper();
+            while(checkAppont=="NO")
             {
-                Console.WriteLine(food);
-            }
-            int[] luckyNumber = { 3, 5, 7, 11, 13 };
-            foreach(int luckynum in luckyNumber)
+                Console.WriteLine("patient check system");
 
-            {
-                Console.WriteLine(luckynum);
+                Console.WriteLine("what is your full name?");
+                String fullName = Console.ReadLine().ToLower();
+                Console.WriteLine("what is your 6-digit patient ID?");
+                int id = int.Parse(Console.ReadLine());
+                Console.WriteLine("what time is your appointment?");
+                checkAppont = Console.ReadLine();
+                
             }
+
+            string playAgain;
+            do
+            {
+                Console.WriteLine("Do you want to play the game?(YES/NO)");
+                Console.WriteLine("great game!");
+                Console.WriteLine("Do you want to play again? (YES/NO)");
+                playAgain = Console.ReadLine();
+            }
+
+
+            while (playAgain == "YES");
+            Console.WriteLine("Thanks for playing you lost the game");
+
+
+
+
+
+            }
+
         }
+
+ 
     }
-}
+
